@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111111" />
+
+  <!-- SEO Meta -->
+  <title>B&A | Vidéastes Premium - Trust the process</title>
+  <meta name="description" content="B&A est une agence de réalisation vidéo premium basée au Togo. Clips, publicités, mariages et événements. Trust the process." />
+  <meta name="keywords" content="vidéo, réalisation, clip, publicité, mariage, Togo, B&A, cinématique, vidéastes" />
+  <meta name="author" content="B&A Creative" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="B&A | Vidéastes Premium" />
+  <meta property="og:description" content="Agence de réalisation vidéo premium au Togo. Trust the process." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ba-creative.com" />
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+
+  <!-- Google Fonts : Montserrat + Cormorant Garamond pour un rendu cinématique -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <!-- Feuille de style principale -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- =============================================
+       EN-TÊTE & NAVIGATION STICKY
+  ============================================= -->
+  <header class="site-header" id="site-header" role="banner">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="#hero" class="logo-link" aria-label="B&A - Retour à l'accueil">
+        <img src="/logo.jpg" alt="B&A Logo" class="logo-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+      
+      </a>
+
+      <!-- Navigation principale (desktop) -->
+      <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+        <ul class="nav-list" role="list">
+          <li><a href="#hero" class="nav-link">Accueil</a></li>
+          <li><a href="#about" class="nav-link">Vision</a></li>
+          <li><a href="#portfolio" class="nav-link">Réalisations</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Bouton Menu Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Menu mobile -->
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navigation mobile" aria-hidden="true">
+      <ul class="mobile-nav-list" role="list">
+        <li><a href="#hero" class="mobile-nav-link">Accueil</a></li>
+        <li><a href="#about" class="mobile-nav-link">Notre Vision</a></li>
+        <li><a href="#portfolio" class="mobile-nav-link">Réalisations</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!-- =============================================
+       SECTION HERO (#hero)
+  ============================================= -->
+  <section id="hero" class="hero-section" aria-label="Section principale">
+
+    <!-- Overlay cinématique -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Grain de film -->
+    <div class="hero-grain" aria-hidden="true"></div>
+
+    <!-- Lignes décoratives -->
+    <div class="hero-lines" aria-hidden="true">
+      <div class="line line--left"></div>
+      <div class="line line--right"></div>
+    </div>
+
+    <!-- Contenu centré -->
+     <div class="hero-content">
+      
+      <div class="hero-tag" style="opacity: 0.8;">
+        <span class="tag-dot" aria-hidden="true"></span>
+        <span>Bien &amp; Asap · Agence Vidéo Premium</span>
+      </div>
+
+      <h1 class="hero-title" style="margin: 20px 0;">
+        <img src="logo.jpg" alt="B&A Logo" style="width: 100%; max-width: 350px; height: auto; border-radius: 8px;" />
+      </h1>
+
+      <h2 class="hero-slogan">
+        <em>Trust the process</em>
+      </h2>
+
+      <p class="hero-description">
+        Nous capturons vos histoires. Nous créons l'émotion.<br />
+        Chaque image, intentionnelle.
+      </p>
+
+      <a href="#about" class="cta-button" aria-label="Découvrir notre vision">
+        <span class="cta-text">Découvrir notre vision</span>
+        <span class="cta-arrow" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Indicateur de défilement -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-line"></div>
+      <span class="scroll-label">Défiler</span>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION À PROPOS (#about)
+  ============================================= -->
+  <section id="about" class="about-section section" aria-labelledby="about-title">
+    <div class="container">
+
+      <!-- En-tête de section -->
+      <div class="section-header">
+        <span class="section-tag">01 — Qui sommes-nous</span>
+        <h2 class="section-title" id="about-title">Notre Vision</h2>
+      </div>
+
+      <!-- Grille 2 colonnes -->
+      <div class="about-grid">
+
+        <!-- Colonne 1 : Visuel -->
+        <div class="about-visual">
+          <div class="founders-image-wrapper">
+            <img
+              src="fondateurs.jpg"
+              alt="Bien & Asap - Fondateurs et Réalisateurs de B&A"
+              class="founders-image"
+              loading="lazy"
+            />
+            <!-- Badge décoratif -->
+            <div class="founders-badge" aria-hidden="true">
+              <span class="badge-year">2025</span>
+              <span class="badge-label">Fondation</span>
+            </div>
+          </div>
+          <figcaption class="founders-caption">
+            Bien &amp; asap — Fondateurs &amp; Réalisateurs
+          </figcaption>
+        </div>
+
+        <!-- Colonne 2 : Texte -->
+        <div class="about-text">
+          <p class="about-intro">
+            Chez <strong>B&amp;A</strong>, nous croyons que chaque image est une déclaration d'intention.
+            Fondée par deux passionnés du 7ème art, notre agence est née d'une conviction profonde :
+            <em>la vidéo n'est pas seulement un medium, c'est une expérience.</em>
+          </p>
+
+          <p class="about-body">
+            De la pré-production à la post-production, chaque étape de notre processus créatif est
+            guidée par une obsession de la qualité et une attention méticuleuse aux détails.
+            Nous ne réalisons pas simplement des vidéos — nous construisons des récits visuels qui
+            captivent, qui émeuvent et qui durent dans le temps. Que ce soit pour un clip musical
+            électrisant, une publicité percutante, un mariage inoubliable ou un contenu corporate
+            de prestige, notre signature reste la même : l'excellence cinématographique.
+          </p>
+
+          <!-- Liste des services -->
+          <div class="services-block">
+            <h3 class="services-title">Nos expertises</h3>
+            <ul class="services-list" role="list">
+              <li class="service-item">
+                <span class="service-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>Tournage &amp; Direction</strong>
+                  <span>Captation cinématique, mise en scène, direction d'acteurs</span>
+                </div>
+              </li>
+              <li class="service-item">
+                <span class="service-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>Montage Vidéo</strong>
+                  <span>Editing narratif, rythme, synchronisation musicale</span>
+                </div>
+              </li>
+              <li class="service-item">
+                <span class="service-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>Étalonnage Colorimétrique</strong>
+                  <span>Color grading cinématique, LUTs sur mesure, cohérence visuelle</span>
+                </div>
+              </li>
+              <li class="service-item">
+                <span class="service-icon" aria-hidden="true">◆</span>
+                <div>
+                  <strong>Direction Artistique</strong>
+                  <span>Concept créatif, storyboard, identité visuelle du projet</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       SECTION PORTFOLIO (#portfolio)
+  ============================================= -->
+  <section id="portfolio" class="portfolio-section section" aria-labelledby="portfolio-title">
+    <div class="container">
+
+      <!-- En-tête de section -->
+      <div class="section-header">
+        <span class="section-tag">02 — Notre travail</span>
+        <h2 class="section-title" id="portfolio-title">Nos Dernières Réalisations</h2>
+        <p class="section-subtitle">
+          Chaque projet est une nouvelle page blanche. Voici ce que nous avons écrit.
+        </p>
+      </div>
+
+      <!-- Grille des 12 vidéos -->
+      <!--
+        STRUCTURE DE CHAQUE CARTE :
+        ┌─────────────────────────────────────────────────┐
+        │  .card-thumbnail-wrapper                        │
+        │  ├── <img>   couverture statique (par défaut)   │
+        │  ├── <video> preview muette   (au survol)       │
+        │  └── .card-overlay  icône Play + dégradé        │
+        └─────────────────────────────────────────────────┘
+        Comportement géré par CSS (opacity) + JS (play/pause).
+        Nommage des fichiers :
+          • Images  → cov-1.png  … cov-10.png
+          • Vidéos  → video-1.mp4 … video-10.mp4
+      -->
+      <div class="portfolio-grid" role="list">
+
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/boîte.mp4"
+  aria-label="Voir la vidéo : Éclat d'Âme — Clip Musical"
+>
+
+          <div class="card-thumbnail-wrapper">
+
+            <!-- Couverture statique affichée par défaut -->
+            <img
+              src="/cov-boite.png"
+              alt="Couverture du projet"
+              class="card-cover"
+              loading="lazy"
+            />
+
+            <!-- Preview vidéo muette — s'active uniquement au survol via JS -->
+           
+
+            <!-- Overlay : dégradé + icône Play (visible au survol) -->
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-info">
+            <h3 class="card-title">rose</h3>
+            <span class="card-type">Clip</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 2 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/video-fille.mp4"
+  aria-label="Voir la vidéo : Lumière Dorée — Film de Mariage"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-fille.png"
+              alt="Couverture du projet Lumière Dorée"
+              class="card-cover"
+              loading="lazy"
+            />
+        
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Lumière Dorée</h3>
+            <span class="card-type">clip</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 3 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/pub-sowe.mp4"
+  aria-label="Voir la vidéo : Horizon — Publicité Commerciale"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-sowe.png"
+              alt="Couverture du projet Horizon"
+              class="card-cover"
+              loading="lazy"
+            />
+         
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">sowe</h3>
+            <span class="card-type">Publicité Commerciale</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 4 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/pub-marker.mp4"
+  aria-label="Voir la vidéo : Mémoire Vivante — Documentaire"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-market.png"
+              alt=" du projet Mémoire Vivante"
+              class="card-cover"
+              loading="lazy"
+            />
+        
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">marché</h3>
+            <span class="card-type">clip</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 5 ── -->
+        <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/pub-resto.mp4"
+  aria-label="Voir la vidéo : Résonnance — Clip Musical"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-resto.png"
+              alt="Couverture du projet Résonnance"
+              class="card-cover"
+              loading="lazy"
+            />
+         
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Restaurant</h3>
+            <span class="card-type">pub clip</span>
+            
+          </div>
+        </article>
+
+        <!-- ── Carte 6 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/mariage.mp4"
+  aria-label="Voir la vidéo : Prestige — Film Corporate"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-mariage.png"
+              alt="Couverture du projet Prestige"
+              class="card-cover"
+              loading="lazy"
+            />
+          
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">mariage</h3>
+            <span class="card-type">Film mariage</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 7 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/hitech.mp4"
+  aria-label="Voir la vidéo : Éternité — Film de Mariage"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/itech.png"
+              alt="Couverture du projet Éternité"
+              class="card-cover"
+              loading="lazy"
+            />
+         
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">hitech</h3>
+            <span class="card-type">Film</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 8 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/ecobank.mp4"
+  aria-label="Voir la vidéo : Fusion — Publicité Commerciale"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-ecobank.png"
+              alt="Couverture du projet Fusion"
+              class="card-cover"
+              loading="lazy"
+            />
+          
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">ecobank</h3>
+            <span class="card-type">anniversaire</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 9 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/conférence.mp4"
+  aria-label="Voir la vidéo : Silhouette — Clip Musical"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-conference.png"
+              alt="Couverture du projet Silhouette"
+              class="card-cover"
+              loading="lazy"
+            />
+          
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">conference</h3>
+            <span class="card-type">conference</span>
+          </div>
+        </article>
+
+        <!-- ── Carte 10 ── -->
+       <article
+  class="video-card"
+  role="listitem"
+  tabindex="0"
+  data-video-url="/sport.mp4"
+  aria-label="Voir la vidéo : Ascension — Film Corporate"
+>
+
+          <div class="card-thumbnail-wrapper">
+            <img
+              src="/cov-sport.png"
+              alt="Couverture du projet Ascension"
+              class="card-cover"
+              loading="lazy"
+            />
+          
+            <div class="card-overlay" aria-hidden="true">
+              <div class="play-icon">
+                <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="30" cy="30" r="29" stroke="white" stroke-width="1.5" opacity="0.6"/>
+                  <path d="M24 20L44 30L24 40V20Z" fill="white"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Ascension</h3>
+            <span class="card-type">Film Corporate</span>
+          </div>
+        </article>
+
+      </div><!-- /.portfolio-grid -->
+    </div><!-- /.container -->
+  </section>
+
+
+  <!-- =============================================
+       SECTION CONTACT (#contact)
+  ============================================= -->
+  <section id="contact" class="contact-section section" aria-labelledby="contact-title">
+    <div class="container">
+
+      <!-- En-tête de section -->
+      <div class="section-header">
+        <span class="section-tag">03 — Travaillons ensemble</span>
+        <h2 class="section-title" id="contact-title">Discutons de votre projet</h2>
+        <p class="section-subtitle">
+          Chaque grande histoire commence par une conversation.
+        </p>
+      </div>
+
+      <!-- Grille contact -->
+      <div class="contact-grid">
+
+        <!-- Colonne 1 : Informations de contact -->
+        <div class="contact-info">
+
+          <div class="contact-block">
+            <span class="contact-label">Email</span>
+            <a href="mailto:bandA.creative@outlook.fr" class="contact-value contact-value--link">
+              bandA.creative@outlook.fr
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">Téléphone</span>
+            <a href="tel:+22896367705" class="contact-value contact-value--link">
+              +228 96 36 77 05
+            </a>
+          </div>
+
+          <div class="contact-block">
+            <span class="contact-label">Réseaux sociaux</span>
+            <div class="social-links">
+
+              <!-- Snapchat -->
+              <a
+                href="https://www.snapchat.com/@asap3553?invite_id=T8F3z6Z7&locale=fr_TG&share_id=440s5_GWTZ-y8SIOHSUonA&sid=b1ad85b5fc1e4c20be70f97dfd021cd5"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivez-nous sur Snapchat"
+              >
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M12 2C8.5 2 6 4.5 6 8v1.5c-.5.1-1.5.5-2 1 0 .8.5 1.5 1.2 1.8-.3.6-.8 1.2-1.7 1.5.5.7 1.8 1 2.8.8.5.8 1.8 2.4 5.7 2.4s5.2-1.6 5.7-2.4c1 .2 2.3-.1 2.8-.8-.9-.3-1.4-.9-1.7-1.5.7-.3 1.2-1 1.2-1.8-.5-.5-1.5-.9-2-1V8c0-3.5-2.5-6-6-6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>Snapchat</span>
+              </a>
+
+              <!-- TikTok -->
+              <a
+                href="https://www.tiktok.com/@lebien244?_r=1&_t=ZN-945UAz0shc6"
+                class="social-link"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Suivez-nous sur TikTok"
+              >
+                <svg class="social-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span>TikTok</span>
+              </a>
+
+            </div>
+          </div>
+
+          <!-- Citation -->
+          <blockquote class="contact-quote">
+            <p>"L'excellence n'est pas un acte, c'est une habitude."</p>
+            <cite>— B&A Creative</cite>
+          </blockquote>
+
+        </div>
+
+        <!-- Colonne 2 : Formulaire de contact -->
+        <div class="contact-form-wrapper">
+          <form
+            action="https://formsubmit.co/bandA.creative@outlook.fr"
+            method="POST"
+            class="contact-form"
+            novalidate
+            aria-label="Formulaire de contact"
+          >
+            <!-- Champs cachés FormSubmit -->
+            <input type="hidden" name="_next" value="#" />
+            <input type="hidden" name="_subject" value="Nouveau projet — B&A Portfolio" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="/merci.html" />
+
+
+            <!-- Nom -->
+            <div class="form-group">
+              <label class="form-label" for="name">Votre nom complet</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="form-input"
+                placeholder="Jean Dupont"
+                required
+                autocomplete="name"
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label class="form-label" for="email">Adresse email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="jean@exemple.com"
+                required
+                autocomplete="email"
+              />
+            </div>
+
+            <!-- Type de projet -->
+            <div class="form-group">
+              <label class="form-label" for="project-type">Type de projet</label>
+              <input
+                type="text"
+                id="project-type"
+                name="project_type"
+                class="form-input"
+                placeholder="Clip Musical / Mariage / Publicité / Corporate..."
+                required
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label class="form-label" for="message">Votre message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Décrivez votre projet, vos ambitions, votre vision..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Bouton d'envoi -->
+            <button type="submit" class="submit-button">
+              <span>Envoyer le message</span>
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M2 9H16M16 9L10 3M16 9L10 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =============================================
+       PIED DE PAGE (FOOTER)
+  ============================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-logo">B&amp;A</span>
+        <span class="footer-slogan">Trust the process</span>
+      </div>
+      <div class="footer-meta">
+        <p class="footer-copyright">© 2026 B&amp;A — Tous droits réservés.</p>
+        <p class="footer-credit">Designed by <span class="footer-designer"><a href="https://logonova.site">Logonova</a></span></p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- =============================================
+       MODAL VIDÉO (LIGHTBOX)
+       Placée à la fin du body pour z-index correct
+  ============================================= -->
+  <  <div id="video-modal" class="modal" role="dialog" aria-modal="true" aria-label="Lecteur vidéo" aria-hidden="true">
+    <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close" aria-label="Fermer la vidéo">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M2 2L18 18M18 2L2 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <div class="modal-video-wrapper" id="modal-video-container">
+      </div>
+    </div>
+  </div>
+
+  <script src="https://player.vimeo.com/api/player.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
+ 
