@@ -1369,12 +1369,15 @@ textarea {
 /* Le contenu du modal prend 100% de l'écran */
 /* 1. On force le conteneur à casser l'ancienne limite de 960px */
 .modal-content {
+  position: relative;
+  z-index: 2;
   max-width: 100% !important;
   width: 100vw !important;
   height: 100vh !important;
   margin: 0 !important;
   border-radius: 0 !important;
 }
+
 
 /* 2. On annule l'ancien effet 16:9 pour prendre toute la hauteur */
 .modal-video-wrapper {
