@@ -13,7 +13,7 @@
    Nom de version du cache : à mettre à jour lors de chaque
    déploiement pour invalider l'ancien cache.
    ============================================================ */
-const CACHE_NAME    = 'ba-portfolio-cache-v5'; // J'ai passé en v2 pour forcer la mise à jour
+const CACHE_NAME    = 'ba-portfolio-cache-v7'; // J'ai passé en v2 pour forcer la mise à jour
 const OFFLINE_URL   = '/index.html';
 
 const STATIC_ASSETS = [
@@ -37,6 +37,9 @@ const STATIC_ASSETS = [
   '/cov-sport.png',
   '/itech.png',
   '/cov-boite.png' 
+  '/asap.jpg' 
+  'bien.jpg' 
+  '/davodu.jpg' 
 ];
 
 
